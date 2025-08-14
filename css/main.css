@@ -17,6 +17,9 @@
 } */
 body {
   font-family: "Poppins", "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.09em;
+  color: #1f1f1f;
 }
 ul,
 li {
@@ -24,13 +27,10 @@ li {
 }
 a {
   text-decoration: none;
-  color: #333;
+  color: #1f1f1f;
 }
 /* 공통영역 */
 .wrap {
   position: relative;
   display: block;
-}
-h1 {
-  font-family: Binggrae, sans-serif;
 }
