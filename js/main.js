@@ -5,4 +5,10 @@ window.addEventListener("load", function () {
   langTxt.addEventListener("click", function () {
     langList.classList.toggle("toggleOpen");
   });
+  // 햄버거 메뉴 기능
+  const hamburger = this.document.querySelector("#hamburger");
+  //   햄버거바 클릭시
+  hamburger.addEventListener("click", function () {
+    hamburger.classList.add("active");
+  });
 });
