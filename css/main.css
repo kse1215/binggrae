@@ -12,9 +12,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* html {
-  scroll-behavior: smooth;
-} */
 body {
   font-family: "Poppins", "Noto Sans KR", sans-serif;
   font-size: 16px;
@@ -28,6 +25,9 @@ li {
 a {
   text-decoration: none;
   color: #1f1f1f;
+}
+html{
+  font-size: clamp(11px, 1vw, 24px);
 }
 /* 공통영역 */
 .wrap {
