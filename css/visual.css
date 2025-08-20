@@ -44,7 +44,7 @@
   background: url(../images/search_icon.png) no-repeat center left;
   border: none;
 }
-.search_box .search button {
+.search_btn {
   max-width: 180px;
   cursor: pointer;
   width: 22%;
