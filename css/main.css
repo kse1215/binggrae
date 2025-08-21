@@ -26,8 +26,17 @@ a {
   text-decoration: none;
   color: #1f1f1f;
 }
-html{
+html {
   font-size: clamp(11px, 1vw, 24px);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+span {
+  color: inherit;
+  font-size: 100%;
+  line-height: inherit;
 }
 /* 공통영역 */
 .wrap {
@@ -35,8 +44,8 @@ html{
   display: block;
 }
 .section {
-    padding-bottom: 150px;
+  padding-bottom: 150px;
 }
-.section01{
+.section01 {
   position: relative;
 }

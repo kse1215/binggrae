@@ -8,7 +8,7 @@
 }
 .kategorie h3 {
   margin-bottom: 20px;
-  font-family: "Binggrae-Bold", sans-serif;
+  font-family: "Binggrae", sans-serif;
   font-size: 38px;
   font-weight: bold;
   line-height: 1.45;
@@ -32,4 +32,57 @@
   display: block;
   cursor: pointer;
 }
-
+.slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slider_list {
+  max-width: 1573px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 7px;
+}
+.slider_track {
+  padding: 20px 0;
+  opacity: 1;
+  width: 2340px;
+  transform: translate3d(0px, 0px, 0px);
+}
+.slider_box {
+  display: block;
+  width: 260px;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.slider_box > div {
+  margin: 0 9px;
+}
+.slider_box > div > li {
+  width: 100%;
+  display: inline-block;
+  transition: transform 1.5s ease, opacity 1s ease;
+  transition-delay: 0s;
+}
+.sild_txt_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 43px;
+  border-radius: 21px;
+  color: #1f1f1f;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  margin-top: 12px;
+  transition: none;
+}
+.sild_txt_hover {
+  display: none;
+  letter-spacing: normal;
+  font-family: "Poppins";
+}

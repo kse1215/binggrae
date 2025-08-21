@@ -79,7 +79,7 @@
   /* box-shadow: 0px 2px 9.8px 0.2px rgba(0, 0, 0, 0.08); */
   border: solid 1px #edecef;
   letter-spacing: normal;
-  font-weight: normal;
+  font-weight: 100;
   padding: 0 20px;
   font-family: "Binggrae";
 }
