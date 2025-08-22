@@ -1,6 +1,10 @@
 @charset "utf-8";
+.section01 > .inner {
+  width: 80%;
+  margin: auto;
+}
 /* 배너(비주얼) */
-.logo_box {
+.section01 > .inner > .logo_box {
   position: relative;
   display: inline-block;
   width: 100%;

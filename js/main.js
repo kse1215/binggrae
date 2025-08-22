@@ -11,4 +11,66 @@ window.addEventListener("load", function () {
   hamburger.addEventListener("click", function () {
     hamburger.classList.add("active");
   });
+  // 카테고리 스와이퍼
+  const kSlider = new Swiper(".kategorie_slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".kategorie .swiper-button-next",
+      prevEl: ".kategorie .swiper-button-prev",
+    },
+    breakpoints: {
+        390: {
+        slidesPerView: 2,
+        // spaceBetween: 4,
+      },
+      480: {
+        slidesPerView: 3,
+        // spaceBetween: 4,
+      },
+      768: {
+        slidesPerView: 4,
+        // spaceBetween: 8,
+      },
+      1200: {
+        slidesPerView: 6,
+        // spaceBetween: 12,
+      },
+    },
+  });
+  // 브랜드 로고 스와이퍼
+  const bSlider = new Swiper(".brand_slider", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: true,
+    // },
+    navigation: {
+      nextEl: ".brand-shop .swiper-button-next",
+      prevEl: ".brand-shop .swiper-button-prev",
+    },
+    breakpoints: {
+        390: {
+        slidesPerView: 2,
+        // spaceBetween: 4,
+      },
+      480: {
+        slidesPerView: 3,
+        // spaceBetween: 4,
+      },
+      768: {
+        slidesPerView: 4,
+        // spaceBetween: 8,
+      },
+      1200: {
+        slidesPerView: 6,
+        // spaceBetween: 12,
+      },
+    },
+  });
 });

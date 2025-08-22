@@ -8,6 +8,10 @@
   text-align: center;
   background: url("../images/pc_section01_4.jpg") no-repeat center / cover;
 }
+.header > .inner {
+  width: 95%;
+  margin: auto;
+}
 /* 상단 top */
 .header_top {
   position: relative;

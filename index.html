@@ -52,268 +52,278 @@
     <link rel="manifest" href="assets/favicon_binggrae/site.webmanifest" />
     <!-- css -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- js -->
     <script src="js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
+    <img
+      src="images/binggrae_seo.png"
+      alt="seo 이미지"
+      style="width: 200px; display: none"
+    />
     <div class="wrap">
-      <img
-        src="images/binggrae_seo.png"
-        alt=""
-        style="width: 200px; display: none"
-      />
       <!-- 상단 -->
       <section class="section section01">
         <div class="section01-bg"></div>
         <!-- 상단 -->
         <header class="header">
-          <!-- 상단 top -->
-          <div class="header_top">
-            <ul>
-              <li>
-                <a href="#">
-                  <span>구매포털시스템</span>
-                  <img src="images/link_arrow02.png" alt="링크화살표" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>인재채용</span>
-                  <img src="images/link_arrow02.png" alt="링크화살표" />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- 상단 bottom -->
-          <div class="header_bottom">
-            <!-- 로고 -->
-            <a href="#" class="logo">
-              <img src="images/logo-pc.png" alt="웹로고" />
-            </a>
-            <!-- 메뉴 -->
-            <nav class="nav">
-              <ul class="gnb">
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">제품소개</a></li>
-                <li><a href="#">지속가능경영</a></li>
-                <li><a href="#">투자정보</a></li>
-                <li><a href="#">뉴스룸</a></li>
-                <li><a href="#">고객센터</a></li>
+          <div class="inner">
+            <!-- 상단 top -->
+            <div class="header_top">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>구매포털시스템</span>
+                    <img src="images/link_arrow02.png" alt="링크화살표" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span>인재채용</span>
+                    <img src="images/link_arrow02.png" alt="링크화살표" />
+                  </a>
+                </li>
               </ul>
-            </nav>
-            <!-- 언어/햄버거바 -->
-            <div class="header_bottom_right">
-              <div class="lang">
-                <div class="lang_txt">
-                  <span>KR</span>
-                  <div class="triangle">
-                    <img src="images/lang_btn.png" alt="btn" />
-                  </div>
-                </div>
-                <ul class="lang-list">
-                  <li><a href="#">KR</a></li>
-                  <li><a href="#">EN</a></li>
+            </div>
+            <!-- 상단 bottom -->
+            <div class="header_bottom">
+              <!-- 로고 -->
+              <a href="#" class="logo">
+                <img src="images/logo-pc.png" alt="웹로고" />
+              </a>
+              <!-- 메뉴 -->
+              <nav class="nav">
+                <ul class="gnb">
+                  <li><a href="#">회사소개</a></li>
+                  <li><a href="#">제품소개</a></li>
+                  <li><a href="#">지속가능경영</a></li>
+                  <li><a href="#">투자정보</a></li>
+                  <li><a href="#">뉴스룸</a></li>
+                  <li><a href="#">고객센터</a></li>
                 </ul>
+              </nav>
+              <!-- 언어/햄버거바 -->
+              <div class="header_bottom_right">
+                <div class="lang">
+                  <div class="lang_txt">
+                    <span>KR</span>
+                    <div class="triangle">
+                      <img src="images/lang_btn.png" alt="btn" />
+                    </div>
+                  </div>
+                  <ul class="lang-list">
+                    <li><a href="#">KR</a></li>
+                    <li><a href="#">EN</a></li>
+                  </ul>
+                </div>
+                <button class="hamburger" id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
               </div>
-              <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
             </div>
           </div>
         </header>
-        <!-- 배너(비주얼) -->
-        <div class="logo_box">
-          <img
-            src="images/sec01_logo.png"
-            alt="binggrae"
-            class="main_banner pc"
-          />
-        </div>
-        <!-- 검색창 -->
-        <div class="search_box">
-          <div class="search">
-            <input
-              type="text"
-              id="search_name"
-              placeholder="제품명을 입력해 주세요"
+        <!-- 비주얼 -->
+        <div class="inner">
+          <!-- 배너(비주얼) -->
+          <div class="logo_box">
+            <img
+              src="images/sec01_logo.png"
+              alt="binggrae"
+              class="main_banner pc"
             />
-            <button type="submit" class="search_btn">SEARCH</button>
           </div>
+          <!-- 검색창 -->
+          <div class="search_box">
+            <div class="search">
+              <input
+                type="text"
+                id="search_name"
+                placeholder="제품명을 입력해 주세요"
+              />
+              <button type="submit" class="search_btn">SEARCH</button>
+            </div>
+          </div>
+          <!-- 해시태그 -->
+          <ul class="keyword_box">
+            <li><a href="#">#바나나맛우유</a></li>
+            <li><a href="#">#더단백</a></li>
+            <li><a href="#">#딥앤로우</a></li>
+            <li><a href="#">#요플레</a></li>
+            <li><a href="#">#아카페라</a></li>
+          </ul>
         </div>
-        <!-- 해시태그 -->
-        <ul class="keyword_box">
-          <li><a href="#">#바나나맛우유</a></li>
-          <li><a href="#">#더단백</a></li>
-          <li><a href="#">#딥앤로우</a></li>
-          <li><a href="#">#요플레</a></li>
-          <li><a href="#">#아카페라</a></li>
-        </ul>
       </section>
       <!-- 카테고리 -->
       <section class="section section02">
-        <!-- 카테고리 -->
-        <div class="kategorie">
-          <h3>행복한 빙그레의 맛!</h3>
-          <div class="aroow aroow_prev">
-            <img src="images/prev_arrow.png" alt="aroow" />
-          </div>
-          <div class="aroow aroow_next">
-            <img src="images/next_arrow.png" alt="aroow" />
-          </div>
-          <ul class="slider">
-            <div class="slider_list">
-              <div class="slider_track">
-                <div class="slider_box ice">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_ice.png" alt="iceCream" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>아이스크림</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+        <div class="inner">
+          <!-- 카테고리 -->
+          <div class="kategorie">
+            <h3>행복한 빙그레의 맛!</h3>
+            <!-- Swiper -->
+            <div class="slider">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper kategorie_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_ice.png" alt="iceCream" />
+                      <div class="sild_txt_box">
+                        <span>아이스크림</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box milk">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_milk.png" alt="milk" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>우유/치즈</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_milk.png" alt="milk" />
+                      <div class="sild_txt_box">
+                        <span>우유/치즈</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box yogurt">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_yogurt.png" alt="yogurt" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>발효유</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_yogurt.png" alt="yogurt" />
+                      <div class="sild_txt_box">
+                        <span>발효유</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box coffee">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_coffee.png" alt="coffee" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>커피</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_coffee.png" alt="coffee" />
+                      <div class="sild_txt_box">
+                        <span>커피</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box juice">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_juice.png" alt="juice" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>주스</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_juice.png" alt="juice" />
+                      <div class="sild_txt_box">
+                        <span>주스</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box drink">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_drink.png" alt="drink" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>음료</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_drink.png" alt="drink" />
+                      <div class="sild_txt_box">
+                        <span>음료</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box snack">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_snack.png" alt="snack" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>스낵/디저트</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_snack.png" alt="snack" />
+                      <div class="sild_txt_box">
+                        <span>스낵/디저트</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box health">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_health.png" alt="health" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>건강지향</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_health.png" alt="health" />
+                      <div class="sild_txt_box">
+                        <span>건강지향</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
-                </div>
-                <div class="slider_box export">
-                  <div>
-                    <li>
-                      <a href="#">
-                        <div class="sild_img_box">
-                          <img src="images/img_box_export.png" alt="export" />
-                        </div>
-                        <div class="sild_txt_box">
-                          <span>수출제품</span>
-                          <span class="sild_txt_hover">VIEW MORE</span>
-                        </div>
-                      </a>
-                    </li>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="images/img_box_export.png" alt="export" />
+                      <div class="sild_txt_box">
+                        <span>수출제품</span>
+                        <span class="sild_txt_hover">VIEW MORE</span>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-          </ul>
-        </div>
-        <!-- 브랜드숍 -->
-        <div class="brand-shop">
-          <h3>BRAND SHOP</h3>
+          </div>
+          <!-- 브랜드숍 -->
+          <div class="brand-shop">
+            <h3>BRAND SHOP</h3>
+            <!-- Swiper -->
+            <div class="slider">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper brand_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo01.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo02.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo03.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo04.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo05.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="logo_box">
+                        <img src="images/sec02_logo06.png" alt="brandLOGO" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- 고객센터 -->
       <section class="section section03">
-        <!-- 고객문의 -->
-        <!-- 온라인제보 -->
+        <div class="inner">
+          <!-- 고객문의 -->
+          <!-- 온라인제보 -->
+        </div>
       </section>
       <!-- 하단 -->
       <footer class="footer"></footer>
