@@ -2,9 +2,8 @@
 @import url("header.css");
 @import url("visual.css");
 @import url("kategorie.css");
-@import url("news.css");
 @import url("cs.css");
-@import url("about.css");
+@import url("news.css");
 @import url("footer.css");
 @import url("font.css");
 * {
@@ -31,7 +30,6 @@ html {
 }
 img {
   display: block;
-  /* width: 100%; */
   max-width: 100%;
 }
 span {
