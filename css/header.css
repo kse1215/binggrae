@@ -9,14 +9,13 @@
   background: url("../images/pc_section01_4.jpg") no-repeat center / cover;
 }
 .header > .inner {
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 /* 상단 top */
 .header_top {
   position: relative;
   border-bottom: 1px solid #e7e7e7;
-  padding: 0 80px;
   z-index: 99;
 }
 .header_top ul {
