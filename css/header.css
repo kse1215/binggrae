@@ -23,7 +23,7 @@
   justify-content: flex-end;
   align-items: center;
   /* font-size: 14px; */
-  font-size: clamp(12px, 1vw, 13px);
+  font-size: clamp(12px, 1vw, 14px);
 }
 .header_top ul li {
   padding-left: 20px;
@@ -58,24 +58,50 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100%;
-  padding: 40px 80px;
+  width: 90%;
+  padding: 40px 0;
+  margin: auto;
+}
+/* 로고 */
+.header_bottom > .logo {
+  width: 200px;
+  /* background-color: aqua; */
 }
 /* 메뉴 */
 .gnb {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 900px;
+  background-color: aqua;
 }
-.gnb li {
+.gnb > li {
   position: relative;
-  /* padding: 45px 80px 0 0; */
-  padding-right: 50px;
+  width: calc(100% / 6);
+  /* padding-right: 50px; */
 }
-.gnb li a {
+.gnb > li > a {
   display: block;
-  font-size: 20px;
+  width: 100%;
+  /* font-size: 20px; */
   font-size: clamp(14px, 1.5vw, 20px);
+}
+.gnb > li:hover > a {
+  color: #e0462e;
+}
+/* 서브메뉴 */
+.depth2 {
+  visibility: hidden;
+  opacity: 0;
+  padding: 50px 0;
+  transition: all 0.5s;
+}
+.depth2 > li > a {
+  line-height: 30px;
+}
+.gnb:hover .depth2{
+  opacity: 1;
+  visibility: visible;
 }
 /* 언어/햄버거바 */
 .lang {
