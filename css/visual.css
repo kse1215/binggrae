@@ -12,9 +12,6 @@
 }
 .main_banner {
   position: relative;
-  /* top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%); */
   display: block;
   margin: auto;
 }
@@ -55,7 +52,7 @@
   height: 55px;
   color: #fff;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: normal;
   border: none;
   border-radius: 27.5px;
@@ -89,4 +86,26 @@
 }
 .keyword_box li + li {
   margin-left: 7px;
+}
+/* 반응형 */
+/* 1280px */
+@media all and (max-width: 1280px) {
+.section01 > .inner {
+  width: 90%;
+  margin: auto;
+}
+}
+/* 1024px */
+@media all and (max-width: 1024px) {
+.section01 > .inner {
+  width: 95%;
+  margin: auto;
+}
+}
+/* 768px */
+@media all and (max-width: 768px) {
+
+}
+/* 390px */
+@media all and (max-width: 390px) {
 }

@@ -12,16 +12,17 @@ window.addEventListener("load", function () {
   const nav = document.querySelector(".gnb");
   const headerBg = this.document.querySelector(".header-bg");
   const depth2Bg = document.querySelector(".depth2-bg");
-  const headerBT = this.document.querySelector(".header_bottom")
+  const headerBT = this.document.querySelector(".header_bottom");
   // nav에 마우스 엔터 했을때 즉 호버했을때
   nav.addEventListener("mouseenter", function () {
     headerBg.classList.add("active");
+    headerBT.classList.add("active");
     depth2Bg.classList.add("active");
-    headerBT.classList.add("active")
   });
   // nav에 마우스 리브 했을때 즉 호버를 안했을때
   nav.addEventListener("mouseleave", function () {
     headerBg.classList.remove("active");
+    headerBT.classList.remove("active");
     depth2Bg.classList.remove("active");
   });
   // 햄버거 메뉴 기능
@@ -29,6 +30,8 @@ window.addEventListener("load", function () {
   //   햄버거바 클릭시
   hamburger.addEventListener("click", function () {
     hamburger.classList.add("active");
+    // hamburger.classList.remove("active");
+
   });
 
   // 카테고리 스와이퍼
