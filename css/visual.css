@@ -45,6 +45,9 @@
   background: url(../images/search_icon.png) no-repeat center left;
   border: none;
 }
+.search input:focus{
+  outline: none;
+}
 .search_btn {
   max-width: 180px;
   cursor: pointer;
@@ -93,6 +96,12 @@
 .section01 > .inner {
   width: 90%;
   margin: auto;
+}
+.search_box{
+  height: 60px;
+}
+.search_btn {
+  height: 45px;
 }
 }
 /* 1024px */

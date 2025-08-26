@@ -59,10 +59,27 @@
     />
     <!-- js -->
     <script src="js/main.js"></script>
+    <script src="js/fix.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
+    <!-- fix메뉴 -->
+    <div class="fix-menu-wrap">
+      <a href="#" class="chat-btn">
+        <img src="images/chat_img.png" alt="chat" />
+        <span>무엇을 도와드릴까요?</span>
+      </a>
+      <a href="#" class="shop-btn">SHOP</a>
+      <div class="top-dwon-btn">
+        <button class="top-btn btn">
+          <img src="images/fix_arrow.png" alt="top-btn"/>
+        </button>
+        <button class="down-btn btn">
+          <img src="images/fix_arrow.png" alt="down-btn"/>
+        </button>
+      </div>
+    </div>
     <!-- 전체 레이아웃 -->
     <img
       src="images/binggrae_seo.png"
@@ -94,103 +111,103 @@
               </li>
             </ul>
           </div>
-            <!-- 상단 bottom -->
-            <div class="header_bottom">
-              <!-- 로고 -->
-              <a href="#" class="logo">
-                <img src="images/logo-pc.png" alt="웹로고" />
-              </a>
-              <!-- 메뉴 -->
-              <nav class="nav">
-                <ul class="gnb">
-                  <li>
-                    <a href="#">회사소개</a>
-                    <ul class="depth2">
-                      <li><a href="#">CEO인사말</a></li>
-                      <li><a href="#">경영이념</a></li>
-                      <li><a href="#">사업분야</a></li>
-                      <li><a href="#">히스토리</a></li>
-                      <li><a href="#">사업장 소개</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">제품소개</a>
-                    <ul class="depth2">
-                      <li><a href="#">아이스크림</a></li>
-                      <li><a href="#">우유/치즈</a></li>
-                      <li><a href="#">발효유</a></li>
-                      <li><a href="#">커피</a></li>
-                      <li><a href="#">주스</a></li>
-                      <li><a href="#">음료</a></li>
-                      <li><a href="#">스낵/디저트</a></li>
-                      <li><a href="#">건강지향</a></li>
-                      <li><a href="#">수출제품</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">지속가능경영</a>
-                    <ul class="depth2">
-                      <li><a href="#">지속가능경영 체계</a></li>
-                      <li><a href="#">Eco-Friendly</a></li>
-                      <li><a href="#">Shared Value</a></li>
-                      <li><a href="#">Global Integrity</a></li>
-                      <li><a href="#">윤리준법경영</a></li>
-                      <li><a href="#">사회공헌</a></li>
-                      <li><a href="#">보고서 및 정책</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">투자정보</a>
-                    <ul class="depth2">
-                      <li><a href="#">재무정보</a></li>
-                      <li><a href="#">주식정보</a></li>
-                      <li><a href="#">전자공고</a></li>
-                      <li><a href="#">공시정보</a></li>
-                      <li><a href="#">IR자료실</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">뉴스룸</a>
-                    <ul class="depth2">
-                      <li><a href="#">새소식</a></li>
-                      <li><a href="#">보도자료</a></li>
-                      <li><a href="#">빙그레 스토리</a></li>
-                      <li><a href="#">미디어 라이브러리</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">고객센터</a>
-                    <ul class="depth2">
-                      <li><a href="#">고객상담</a></li>
-                      <li><a href="#">제품공급문의</a></li>
-                      <li><a href="#">사이버 신고센터</a></li>
-                      <li><a href="#">안전신문고</a></li>
-                      <li><a href="#">개인정보처리방침</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-              <!-- 언어/햄버거바 -->
-              <div class="header_bottom_right">
-                <div class="lang">
-                  <div class="lang_txt">
-                    <span>KR</span>
-                    <div class="triangle">
-                      <img src="images/lang_btn.png" alt="btn" />
-                    </div>
-                  </div>
-                  <ul class="lang-list">
-                    <li><a href="#">KR</a></li>
-                    <li><a href="#">EN</a></li>
+          <!-- 상단 bottom -->
+          <div class="header_bottom">
+            <!-- 로고 -->
+            <a href="#" class="logo">
+              <img src="images/logo-pc.png" alt="웹로고" />
+            </a>
+            <!-- 메뉴 -->
+            <nav class="nav">
+              <ul class="gnb">
+                <li>
+                  <a href="#">회사소개</a>
+                  <ul class="depth2">
+                    <li><a href="#">CEO인사말</a></li>
+                    <li><a href="#">경영이념</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">히스토리</a></li>
+                    <li><a href="#">사업장 소개</a></li>
                   </ul>
+                </li>
+                <li>
+                  <a href="#">제품소개</a>
+                  <ul class="depth2">
+                    <li><a href="#">아이스크림</a></li>
+                    <li><a href="#">우유/치즈</a></li>
+                    <li><a href="#">발효유</a></li>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">주스</a></li>
+                    <li><a href="#">음료</a></li>
+                    <li><a href="#">스낵/디저트</a></li>
+                    <li><a href="#">건강지향</a></li>
+                    <li><a href="#">수출제품</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">지속가능경영</a>
+                  <ul class="depth2">
+                    <li><a href="#">지속가능경영 체계</a></li>
+                    <li><a href="#">Eco-Friendly</a></li>
+                    <li><a href="#">Shared Value</a></li>
+                    <li><a href="#">Global Integrity</a></li>
+                    <li><a href="#">윤리준법경영</a></li>
+                    <li><a href="#">사회공헌</a></li>
+                    <li><a href="#">보고서 및 정책</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">투자정보</a>
+                  <ul class="depth2">
+                    <li><a href="#">재무정보</a></li>
+                    <li><a href="#">주식정보</a></li>
+                    <li><a href="#">전자공고</a></li>
+                    <li><a href="#">공시정보</a></li>
+                    <li><a href="#">IR자료실</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">뉴스룸</a>
+                  <ul class="depth2">
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">보도자료</a></li>
+                    <li><a href="#">빙그레 스토리</a></li>
+                    <li><a href="#">미디어 라이브러리</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <ul class="depth2">
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">제품공급문의</a></li>
+                    <li><a href="#">사이버 신고센터</a></li>
+                    <li><a href="#">안전신문고</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <!-- 언어/햄버거바 -->
+            <div class="header_bottom_right">
+              <div class="lang">
+                <div class="lang_txt">
+                  <span>KR</span>
+                  <div class="triangle">
+                    <img src="images/lang_btn.png" alt="btn" />
+                  </div>
                 </div>
-                <button class="hamburger" id="hamburger">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
+                <ul class="lang-list">
+                  <li><a href="#">KR</a></li>
+                  <li><a href="#">EN</a></li>
+                </ul>
               </div>
+              <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
             </div>
+          </div>
         </header>
         <!-- 비주얼 -->
         <div class="inner">
@@ -208,7 +225,7 @@
               <input
                 type="text"
                 id="search_name"
-                placeholder="제품명을 입력해 주세요"
+                placeholder="검색어를 입력해주세요"
               />
               <button type="submit" class="search_btn">SEARCH</button>
             </div>
