@@ -1,4 +1,6 @@
 window.addEventListener("load", function () {
+  AOS.init();
+  
   // 상단 top
   // 언어 메뉴 토글
   const langTxt = this.document.querySelector(".lang_txt");

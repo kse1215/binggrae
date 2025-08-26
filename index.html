@@ -57,11 +57,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- js -->
     <script src="js/main.js"></script>
     <script src="js/fix.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <!-- fix메뉴 -->
@@ -73,10 +75,10 @@
       <a href="#" class="shop-btn">SHOP</a>
       <div class="top-dwon-btn">
         <button class="top-btn btn">
-          <img src="images/fix_arrow.png" alt="top-btn"/>
+          <img src="images/fix_arrow.png" alt="top-btn" />
         </button>
         <button class="down-btn btn">
-          <img src="images/fix_arrow.png" alt="down-btn"/>
+          <img src="images/fix_arrow.png" alt="down-btn" />
         </button>
       </div>
     </div>
@@ -244,7 +246,8 @@
       <section class="section section02">
         <div class="inner">
           <!-- 카테고리 -->
-          <div class="kategorie">
+          <div class="kategorie" data-aos="fade-up"
+     data-aos-duration="3000">
             <h3>행복한 빙그레의 맛!</h3>
             <!-- Swiper -->
             <div class="slider">
@@ -338,7 +341,7 @@
             </div>
           </div>
           <!-- 브랜드숍 -->
-          <div class="brand-shop">
+          <div class="brand-shop" data-aos="fade-up" data-aos-duration="3000">
             <h3>BRAND SHOP</h3>
             <!-- Swiper -->
             <div class="slider">
@@ -398,119 +401,129 @@
       <section class="section section03">
         <div class="inner">
           <!-- 고객문의 -->
-          <h3>고객문의 및 불편사항</h3>
-          <div class="qna_box">
-            <!-- 고객문의 상단 -->
-            <div class="qna_box_top">
-              <!-- 이메일 상담 -->
-              <div class="box email_box">
-                <h4>이메일 상담</h4>
-                <p>
-                  빙그레에 궁금한 사항을 문의해 주세요.<br />
-                  최대한 빠른 시일내에 친절하게 답변해드리겠습니다.
-                </p>
-                <a href="#" class="qna_btn">상담하기</a>
+          <div class="qna_box_wrap" data-aos="fade-up" data-aos-duration="3000">
+            <h3>고객문의 및 불편사항</h3>
+            <div class="qna_box">
+              <!-- 고객문의 상단 -->
+              <div class="qna_box_top">
+                <!-- 이메일 상담 -->
+                <div class="box email_box">
+                  <h4>이메일 상담</h4>
+                  <p>
+                    빙그레에 궁금한 사항을 문의해 주세요.<br />
+                    최대한 빠른 시일내에 친절하게 답변해드리겠습니다.
+                  </p>
+                  <a href="#" class="qna_btn">상담하기</a>
+                </div>
+                <!-- 전화 상담 -->
+                <div class="box phone_box">
+                  <h4>전화 상담</h4>
+                  <p class="phone">080.022.0056</p>
+                  <p class="time">
+                    월~금(공휴일 제외)
+                    <span>09:00~17:30</span>
+                  </p>
+                </div>
               </div>
-              <!-- 전화 상담 -->
-              <div class="box phone_box">
-                <h4>전화 상담</h4>
-                <p class="phone">080.022.0056</p>
-                <p class="time">
-                  월~금(공휴일 제외)
-                  <span>09:00~17:30</span>
-                </p>
+              <!-- 고객문의 하단 -->
+              <div class="qna_box_bottom">
+                <div class="qna_box_bottom-f">
+                  <h4>
+                    자주 묻는 질문에 내용이 없을 경우, 이메일 및 전화 상담
+                    바랍니다.
+                  </h4>
+                  <button>더보기</button>
+                </div>
+                <ul class="qna_list">
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span
+                        >빙그레 건강기능식품을 주문할 수 있는 몰이 따로
+                        있나요?</span
+                      >
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span>아이스크림에는 왜 소비기한이 없나요?</span>
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span
+                        >제품 소비기한 뒤에 있는 알파벳 기호는 무엇인가요?</span
+                      >
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span
+                        >아이스크림, 음료 등 제품 공급(납품) 관련 문의드리고
+                        싶어요.</span
+                      >
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span>요플레 분리배출(라벨 제거) 방법 알려주세요.</span>
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                  <li class="on">
+                    <p>
+                      <i>Q. </i>
+                      <span
+                        >빙그레 제품을 구입할 수 있는 온라인 몰이 있나요?</span
+                      >
+                    </p>
+                    <a href="#" class="link_arrow">
+                      <img src="images/link_arrow01.png" alt="arrow" />
+                    </a>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <!-- 고객문의 하단 -->
-            <div class="qna_box_bottom">
-              <div class="qna_box_bottom-f">
-                <h4>
-                  자주 묻는 질문에 내용이 없을 경우, 이메일 및 전화 상담
-                  바랍니다.
-                </h4>
-                <button>더보기</button>
-              </div>
-              <ul class="qna_list">
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span
-                      >빙그레 건강기능식품을 주문할 수 있는 몰이 따로
-                      있나요?</span
-                    >
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span>아이스크림에는 왜 소비기한이 없나요?</span>
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span
-                      >제품 소비기한 뒤에 있는 알파벳 기호는 무엇인가요?</span
-                    >
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span
-                      >아이스크림, 음료 등 제품 공급(납품) 관련 문의드리고
-                      싶어요.</span
-                    >
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span>요플레 분리배출(라벨 제거) 방법 알려주세요.</span>
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-                <li class="on">
-                  <p>
-                    <i>Q. </i>
-                    <span
-                      >빙그레 제품을 구입할 수 있는 온라인 몰이 있나요?</span
-                    >
-                  </p>
-                  <a href="#" class="link_arrow">
-                    <img src="images/link_arrow01.png" alt="arrow" />
-                  </a>
-                </li>
-              </ul>
             </div>
           </div>
           <!-- 온라인제보 -->
-          <h3>빙그레 임직원 및 종사자 온라인제보</h3>
-          <div class="online">
-            <div class="cyber_box">
-              <p>
-                빙그레 임직원의 부당한 요구 또는 업무처리, <br />
-                인권고충, 기타 부정행위 제보
-              </p>
-              <a href="#">사이버 신고센터</a>
-            </div>
-            <div class="safe_box">
-              <p>빙그레 종사자의 유해·위험요소 및 안전·보건에 관한 의견 제보</p>
-              <a href="#">안전신문고</a>
+          <div
+            class="online_box_wrap"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <h3>빙그레 임직원 및 종사자 온라인제보</h3>
+            <div class="online">
+              <div class="cyber_box">
+                <p>
+                  빙그레 임직원의 부당한 요구 또는 업무처리, <br />
+                  인권고충, 기타 부정행위 제보
+                </p>
+                <a href="#">사이버 신고센터</a>
+              </div>
+              <div class="safe_box">
+                <p>
+                  빙그레 종사자의 유해·위험요소 및 안전·보건에 관한 의견 제보
+                </p>
+                <a href="#">안전신문고</a>
+              </div>
             </div>
           </div>
         </div>
