@@ -41,26 +41,55 @@
   top: var(--swiper-navigation-top-offset, 55%) !important;
 }
 /* 스와이퍼 텍스트 박스 */
-.sild_txt_box {
+.sild_txt_box{
+    position: relative;
+}
+.sild_txt_none {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 97%;
   height: 43px;
   border-radius: 21px;
-  color: #1f1f1f;
   font-size: 16px;
-  background-color: #f9f9f9;
   margin-top: 12px;
   transition: none;
-}
-.sild_txt_hover {
-  display: none;
-  letter-spacing: normal;
+  color: #1f1f1f;
+  background-color: #f9f9f9;
   font-family: "Poppins";
 }
+.sild_txt_none {
+  transition: opacity 0.3s;
+}
+.sild_txt_hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 43px;
+  border-radius: 21px;
+  font-size: 16px;
+  transition: none;
+  letter-spacing: normal;
+  color: #fff;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+  font-family: "Poppins";
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.swiper-slide:hover .sild_txt_none{
+    opacity: 0;
+}
+.swiper-slide:hover .sild_txt_hover {
+  opacity: 1;
+  visibility: visible;
+}
 /* 브랜드숍 */
-.swiper-slide > a > .logo_box {
+.swiper-slide .logo_box {
   position: relative;
   display: block;
   border: solid 1px #edecef;
@@ -69,7 +98,7 @@
   overflow: hidden;
   background-color: #fff;
 }
-.swiper-slide > a > .logo_box img {
+.swiper-slide .logo_box img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,15 +107,15 @@
 /* 반응형 */
 /* 1280px */
 @media all and (max-width: 1280px) {
-
 }
 /* 1024px */
 @media all and (max-width: 1024px) {
-
 }
 /* 768px */
 @media all and (max-width: 768px) {
-
+  .section02 h3 {
+    font-size: 25px;
+  }
 }
 /* 390px */
 @media all and (max-width: 390px) {

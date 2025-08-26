@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 고객센터 */
 .section03 .inner {
-  width: 65%;
+  width: 80%;
   max-width: 1310px;
   margin: auto;
 }
@@ -54,6 +54,9 @@
 .email_box p {
   font-size: 16px;
   line-height: 1.63;
+}
+.email_box p .mo {
+  display: none;
 }
 .qna_btn {
   position: absolute;
@@ -127,6 +130,11 @@
   letter-spacing: normal;
   opacity: 1;
 }
+.qna_box_bottom-f button:hover {
+  border: solid 1px transparent;
+  color: #fff;
+  background-image: linear-gradient(to top, #ed1c24, #e0462e);
+}
 .qna_list {
   display: flex;
   flex-wrap: wrap;
@@ -173,9 +181,13 @@
   box-shadow: inset 0px 5px 10px 0 rgba(26, 26, 26, 0.14);
   background-color: #e0462e;
   transform: scale(0);
+  transition: all 0.5s;
 }
 .on:hover .link_arrow {
   transform: scale(1);
+}
+.link_arrow .mo {
+  display: none;
 }
 /* 온라인제보 */
 .online {
@@ -200,13 +212,13 @@
 }
 .cyber_box p,
 .safe_box p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.63;
 }
 .cyber_box a,
 .safe_box a {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Noto Sans KR", sans-serif;
@@ -228,16 +240,167 @@
 /* 반응형 */
 /* 1280px */
 @media all and (max-width: 1280px) {
-
+  .section03 .inner {
+    width: 90%;
+  }
+  .qna_box h4 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .phone_box .phone {
+    font-size: 35px;
+  }
+  .qna_list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .qna_list li {
+    width: 100%;
+  }
 }
 /* 1024px */
 @media all and (max-width: 1024px) {
-
+  .qna_box_top .box {
+    height: 260px;
+    padding: 30px;
+    background-position: center right 20%;
+  }
+  .qna_box_top .box h4 {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
+  .email_box p {
+    font-size: 14px;
+  }
+  .email_box p .mo {
+    display: block;
+  }
+  .phone_box .time {
+    font-size: 14px;
+  }
+  .qna_btn {
+    bottom: 30px;
+    left: 30px;
+  }
 }
 /* 768px */
 @media all and (max-width: 768px) {
-
+  .qna_box_wrap h3 {
+    font-size: 25px !important;
+  }
+  .qna_box {
+    padding: 30px 25px;
+    border-radius: 30px;
+    box-shadow: none;
+    border: solid 1px rgba(224, 223, 226, 0.6);
+    background-color: #fff;
+  }
+  .qna_box_top {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .qna_box_top .box {
+    text-align: left;
+    width: 100%;
+    padding: 29px 23px;
+    height: 125px;
+    border-radius: 15px;
+  }
+  .qna_box_top .box:first-child {
+    margin-bottom: 10px;
+  }
+  .qna_box_top .box h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  .email_box {
+    background: #eef8fa url("../images/sec04_backimg01.png") no-repeat center /
+      cover;
+  }
+  .email_box p span {
+    display: none;
+  }
+  .email_box a {
+    display: none;
+  }
+  .phone_box {
+    background: #eef8fa url("../images/sec04_backimg02.png") no-repeat center /
+      cover;
+  }
+  .phone_box .phone {
+    font-size: 18px;
+  }
+  .phone_box .time {
+    padding-top: 10px;
+  }
+  /* 고객문의 하단 */
+  .qna_box_bottom-f h4 {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .qna_box_bottom-f button {
+    font-size: 12px;
+    width: 115px;
+    height: 30px;
+  }
+  .qna_list li {
+    height: 47px;
+    border-radius: 15px;
+    box-shadow: inset 0px 5px 10px 0 rgba(121, 121, 121, 0.08);
+    background-color: #f9f9f9;
+    padding: 0 19px 0 17px;
+    /* 말줄임 표시 */
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .qna_list li p i {
+    font-size: 15px;
+  }
+  .qna_list li p span {
+    font-size: 14px;
+  }
+  .link_arrow {
+    width: auto;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    transform: scale(1);
+  }
+  .link_arrow .pc {
+    display: none;
+  }
+  .link_arrow .mo {
+    display: block;
+    width: 12px;
+  }
+  .online_box_wrap h3 {
+    font-size: 25px !important;
+  }
 }
 /* 390px */
 @media all and (max-width: 390px) {
+  .qna_list li p {
+    justify-content: flex-start;
+  }
+  .qna_list li span {
+    /* 말줄임 표시 */
+    width: 60%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .online {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .cyber_box,
+  .safe_box {
+    width: 100%;
+  }
+  .cyber_box {
+    margin-bottom: 20px;
+  }
 }

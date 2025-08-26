@@ -1,6 +1,6 @@
 window.addEventListener("load", function () {
   AOS.init();
-  
+
   // 상단 top
   // 언어 메뉴 토글
   const langTxt = this.document.querySelector(".lang_txt");
@@ -33,7 +33,6 @@ window.addEventListener("load", function () {
   hamburger.addEventListener("click", function () {
     hamburger.classList.add("active");
     // hamburger.classList.remove("active");
-
   });
 
   // 카테고리 스와이퍼
@@ -67,6 +66,21 @@ window.addEventListener("load", function () {
       },
     },
   });
+  // 카테고리 버튼 호버
+  const swiperSlide = this.document.querySelector(".swiper-slide");
+  const sildTxtNone = this.document.querySelector(".sild_txt_none");
+  const sildTxtHover = this.document.querySelector(".sild_txt_hover");
+  // 카테고리에 마우스 엔터 했을때 즉 호버했을때
+  swiperSlide.addEventListener("mouseenter", function () {
+    // sildTxtNone.classList.add("active");
+    headerBT.classList.add("active");
+  });
+  // 카테고리에 마우스 리브 했을때 즉 호버를 안했을때
+  swiperSlide.addEventListener("mouseleave", function () {
+    // sildTxtNone.classList.remove("active");
+    headerBT.classList.remove("active");
+  });
+
   // 브랜드 로고 스와이퍼
   const bSlider = new Swiper(".brand_slider", {
     slidesPerView: 1,
