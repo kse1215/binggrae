@@ -1,4 +1,10 @@
 window.addEventListener("load", function () {
+  // 모달창 닫기
+  const modal = this.document.querySelector(".modal-wrap");
+  const modalClose = this.document.querySelector(".modal-close");
+  modalClose.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
   //   스크롤 이벤트
   const topBtn = this.document.querySelector(".top-btn");
   const downBtn = this.document.querySelector(".dwon-btn");
