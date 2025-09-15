@@ -60,7 +60,7 @@
   font-family: "Poppins";
 }
 .sild_txt_none {
-  transition: opacity 0.3s;
+  transition: all 0.5s;
 }
 .sild_txt_hover {
   position: absolute;
@@ -79,7 +79,7 @@
   font-family: "Poppins";
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s;
+  transition: all 0.5s;
 }
 .swiper-slide:hover .sild_txt_none{
     opacity: 0;
